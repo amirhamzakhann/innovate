@@ -1,0 +1,973 @@
+/* ======= Common Css Area Start Here ======= */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+/* ======= Common Css Area End Here ======= */
+
+/* ======= Root Css Area Start Here ======= */
+:root {
+  --nunito: "Nunito", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --sans: "Open Sans", sans-serif;
+  --thin: 100;
+  --exlight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --exbold: 800;
+  --black: 900;
+  --weight: 1000;
+  --primarycolor: #29313d;
+  --colorwhite: #ffffff;
+  --colorpurple: #7968ef;
+  --text18: 18px;
+  --text20: 20px;
+  --text24: 24px;
+  --text48: 48px;
+}
+/* ======= Root Css Area End Here ======= */
+
+/* ======= Root Css Area Start Here ======= */
+::selection {
+  background: var(--colorwhite);
+  color: var(--primarycolor);
+}
+/* ======= Root Css Area End Here ======= */
+
+/* ======= Navbar Css Area Start Here ======= */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.btn_contact_us {
+  padding: 14px 28px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+  transition: all linear 0.3s;
+}
+
+.btn_contact_us:hover {
+  background: var(--colorwhite);
+  color: var(--primarycolor);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: var(--sans);
+  font-weight: var(--semibold);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+}
+/* ======= Navbar Css Area End Here ======= */
+
+/* ======= Banner Css Area Start Here ======= */
+#banner {
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 160px;
+  padding-bottom: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero_top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inner_hero {
+  width: 70px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  padding: 8px 10px;
+  transition: all linear 0.3s;
+}
+
+.inner_hero:hover {
+  background: var(--colorwhite);
+}
+
+.inner_hero span:hover {
+  color: var(--primarycolor);
+  cursor: pointer;
+}
+
+.inner_hero span {
+  font-family: var(--nunito);
+  font-weight: var(--medium);
+  font-size: var(--text20);
+  color: var(--colorwhite);
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+
+.hero_text h3 {
+  font-family: var(--poppins);
+  font-weight: var(--bold);
+  font-size: 64px;
+  color: var(--colorwhite);
+  line-height: 130%;
+  padding-bottom: 20px;
+}
+
+.hero_text p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+  line-height: 200%;
+  padding: 0 100px;
+  margin-bottom: 48px;
+}
+
+.website_link_input {
+  width: 638px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.website_link_input input {
+  width: 100%;
+  padding: 30px 150px 30px 30px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.website_link_input input:focus {
+  outline: 0;
+}
+
+.website_link_input input::placeholder {
+  color: var(--primarycolor);
+}
+
+.website_link_input button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 29px;
+  background: #6a55ea;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+  transition: all linear 0.3s;
+}
+
+.rocket {
+  position: absolute;
+  top: 160px;
+  right: 0;
+  z-index: -1;
+}
+
+.cloud {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.brand {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* ======= Banner Css Area End Here ======= */
+
+/* ======= Service Css Area Start Here ======= */
+#service {
+  padding-bottom: 100px;
+}
+
+.service_heading h4 {
+  font-family: var(--nunito);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--colorpurple);
+  line-height: 150%;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.service_heading h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text48);
+  color: var(--primarycolor);
+  line-height: 140%;
+  padding-bottom: 60px;
+  text-transform: capitalize;
+}
+
+.service_left_text p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 200%;
+  padding-top: 27px;
+  padding-bottom: 80px;
+  padding-left: 10px;
+}
+
+.service_thumbbail {
+  margin-right: 10px;
+}
+
+.service_item {
+  border-radius: 20px;
+  background: #f0edff;
+  padding: 30px 30px 20px 30px;
+}
+
+.service_item:nth-child(2) {
+  background: #fef6ec;
+}
+
+.service_item:nth-child(3) {
+  background: #e8fcf2;
+}
+
+.service_thumbnail_text h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: 28px;
+  color: var(--primarycolor);
+  line-height: 140%;
+  padding-bottom: 12px;
+  padding-left: 10px;
+}
+
+.service_thumbnail_text p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 200%;
+  padding: 0px 10px;
+  text-transform: capitalize;
+}
+
+/* ======= Service Css Area End Here ======= */
+
+/* ======= Trafic Css Area Start Here ======= */
+#trafic {
+  padding-top: 112px;
+  padding-bottom: 97px;
+}
+
+.trafic_heading h4 {
+  font-family: var(--nunito);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--colorpurple);
+  line-height: 150%;
+  text-transform: capitalize;
+}
+
+.trafic_heading h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text48);
+  color: var(--primarycolor);
+  line-height: 140%;
+  padding-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.trafic_heading p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 200%;
+  text-transform: capitalize;
+  padding-right: 122px;
+}
+/* ======= Trafic Css Area End Here ======= */
+
+/* ======= Process Css Area Start Here ======= */
+#process {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: rgba(241, 251, 251, 0.5);
+}
+
+.process_heading h4 {
+  font-family: var(--nunito);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--colorpurple);
+  line-height: 150%;
+  text-transform: capitalize;
+  padding-bottom: 14px;
+}
+
+.process_heading h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text48);
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+
+.process_main_box {
+  background: rgba(0, 132, 255, 0.1);
+  border-radius: 14px;
+  padding: 38px 20px;
+  position: relative;
+  transition: all linear 0.3s;
+}
+
+.process_main_box:hover path {
+  fill: #ffffff;
+}
+
+.process_main_box:hover {
+  background: #f8a64c;
+  cursor: pointer;
+}
+
+.process_main_box:hover p {
+  color: var(--colorwhite);
+}
+
+.process_main_box:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  visibility: hidden;
+  opacity: 0;
+  border-width: 30px 25px 0 25px;
+  transition: all linear 0.3s;
+  border-color: #f8a64c transparent transparent transparent;
+}
+
+.process_main_box:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.main_box:nth-child(2) .process_main_box {
+  background: #f0edff;
+  transition: all linear 0.3s;
+}
+
+.main_box:nth-child(2) .process_main_box:hover {
+  background: #f8a64c;
+}
+
+.main_box:nth-child(3) .process_main_box:hover {
+  background: #f8a64c;
+}
+
+.main_box:nth-child(4) .process_main_box:hover {
+  background: #f8a64c;
+}
+
+.main_box:nth-child(3) .process_main_box {
+  background: #e8fcf2;
+  transition: all linear 0.3s;
+}
+
+.main_box:nth-child(4) .process_main_box {
+  background: #fef6ec;
+  transition: all linear 0.3s;
+}
+
+.process_main_box p {
+  font-family: var(--poppins);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-top: 30px;
+}
+
+.real_time_wrapper {
+  margin-top: 80px;
+}
+
+.real_time_right h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: 36px;
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-bottom: 24px;
+}
+
+.real_time_right p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 200%;
+  text-transform: capitalize;
+  padding-bottom: 48px;
+  padding-right: 144px;
+}
+
+.real_time_right button {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+  line-height: 100%;
+  text-transform: capitalize;
+  padding: 30px;
+  border-radius: 20px;
+  background: #6a55ea;
+  border: none;
+  transition: all linear 0.3s;
+}
+
+.real_time_right button:hover {
+  background: var(--primarycolor);
+}
+
+/* ======= Process Css Area End Here ======= */
+
+/* ======= Works Css Area Start Here ======= */
+#works {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.works_heading h4 {
+  font-family: var(--nunito);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--colorpurple);
+  line-height: 150%;
+  text-transform: capitalize;
+  padding-bottom: 14px;
+}
+
+.works_heading_big h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text48);
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+.works_heading_btn a {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text18);
+  color: #6a55ea;
+  line-height: 100%;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  border-radius: 14px;
+  background: transparent;
+  border: 1px solid #6a55ea;
+  transition: all linear 0.3s;
+}
+
+.works_heading_btn a:hover {
+  background: #6a55ea;
+  border: 1px solid #6a55ea;
+  color: var(--colorwhite);
+}
+
+.case_study_wrapper {
+  margin-top: 60px;
+}
+
+.case_study_image img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.case_study_text {
+  margin-left: 10px;
+}
+
+.case_study_text h3 {
+  font-family: var(--poppins);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-top: 24px;
+}
+
+.case_study_text p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 200%;
+  text-transform: capitalize;
+  padding-top: 14px;
+}
+
+/* ======= Works Css Area End Here ======= */
+
+/* ======= Pricing Css Area Start Here ======= */
+#pricing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: rgba(241, 251, 251, 0.5);
+}
+
+.pricing_heading h4 {
+  font-family: var(--nunito);
+  font-weight: var(--medium);
+  font-size: var(--text24);
+  color: var(--colorpurple);
+  line-height: 150%;
+  text-transform: capitalize;
+  padding-bottom: 14px;
+}
+
+.pricing_heading h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text48);
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-bottom: 60px;
+}
+
+.price_head h3 {
+  font-family: var(--poppins);
+  font-weight: var(--regular);
+  font-size: var(--text24);
+  color: var(--primarycolor);
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.price_head h4 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: 28px;
+  color: var(--primarycolor);
+  line-height: 160%;
+  text-transform: capitalize;
+  margin-top: 16px;
+}
+
+.price_head h5 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text24);
+  color: var(--primarycolor);
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.price {
+  position: relative;
+}
+
+.main_price:nth-child(1) .price:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 300px;
+  height: 14px;
+  background-color: #d2eafd;
+  border-radius: 10px;
+}
+
+.main_price:nth-child(2) .price:after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 14px;
+  width: 300px;
+  height: 14px;
+  background-color: #323232;
+  border-radius: 10px;
+}
+
+.main_price:nth-child(3) .price:after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 14px;
+  width: 300px;
+  height: 14px;
+  background-color: #43cb83;
+  border-radius: 10px;
+}
+
+.main_price:nth-child(4) .price:after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 14px;
+  width: 300px;
+  height: 14px;
+  background-color: #845a9f;
+  border-radius: 10px;
+}
+
+.price_body {
+  margin-top: 40px;
+}
+
+.price_head h3 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.price_details {
+  background-color: rgba(239, 244, 248, 0.6);
+  padding: 20px 30px;
+}
+
+.price_details span {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text20);
+  color: var(--primarycolor);
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.price_details2 p {
+  font-family: var(--poppins);
+  font-weight: var(--medium);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.price_details2 i {
+  font-size: var(--text24);
+}
+
+.price_details:nth-child(even) {
+  background-color: white;
+}
+
+.price_details2:nth-child(even) {
+  background-color: white;
+}
+.price_details2 {
+  background-color: rgba(239, 244, 248, 0.6);
+  padding: 13px 30px;
+}
+
+.main_price:nth-child(2) .price:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 1px;
+  height: 92%;
+  background-color: #d7e6f9;
+  border-radius: 10px;
+}
+
+.main_price:nth-child(3) .price:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 1px;
+  height: 92%;
+  background-color: #d7e6f9;
+  border-radius: 10px;
+}
+
+.main_price:nth-child(4) .price:before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 1px;
+  height: 92%;
+  background-color: #d7e6f9;
+  border-radius: 10px;
+}
+
+.price_btn button {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text20);
+  color: var(--colorwhite);
+  line-height: 100%;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  background-color: #323232;
+  border: 0;
+  width: 100%;
+}
+
+.main_price:nth-child(2) .price_btn button {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text20);
+  color: var(--colorwhite);
+  line-height: 100%;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  background-color: #323232;
+  border: 0;
+  width: 100%;
+}
+
+.main_price:nth-child(3) .price_btn button {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text20);
+  color: var(--colorwhite);
+  line-height: 100%;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  background-color: #43cb83;
+  border: 0;
+  width: 100%;
+}
+
+.main_price:nth-child(4) .price_btn button {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text20);
+  color: var(--colorwhite);
+  line-height: 100%;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  background-color: #845a9f;
+  border: 0;
+  width: 100%;
+}
+
+/* ======= Pricing Css Area End Here ======= */
+
+/* ======= Seo Css Area Start Here ======= */
+#seo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.seo_background {
+  background-image: url(../images/seo_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-radius: 50px;
+}
+
+.seo_text_part h3 {
+  font-family: var(--poppins);
+  font-weight: var(--semibold);
+  font-size: var(--text48);
+  color: var(--colorwhite);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.seo_text_part p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+  line-height: 200%;
+  text-transform: capitalize;
+  margin-top: 15px;
+  padding: 0px 50px;
+}
+
+.seo_input_type {
+  width: 638px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.seo_input_type input {
+  width: 100%;
+  padding: 30px 150px 30px 30px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.seo_input_type input:focus {
+  outline: 0;
+}
+
+.seo_input_type input::placeholder {
+  color: var(--primarycolor);
+}
+
+.seo_input_type button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 29px;
+  background: #6a55ea;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text18);
+  color: var(--colorwhite);
+  transition: all linear 0.3s;
+}
+
+/* ======= Seo Css Area End Here ======= */
+
+/* ======= Footer Css Area Start Here ======= */
+#footer {
+  background: rgba(241, 251, 251, 0.5);
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.footer_logo {
+  margin-bottom: 44px;
+}
+
+.footer_main_one_text p {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 180%;
+  text-transform: capitalize;
+  padding-right: 52px;
+}
+
+.footer_main_head h3 {
+  font-family: var(--sans);
+  font-weight: var(--semibold);
+  font-size: var(--text24);
+  color: var(--primarycolor);
+  line-height: 140%;
+  text-transform: capitalize;
+  padding-bottom: 48px;
+}
+
+.footer_main_two_content ul {
+  margin-left: -30px;
+}
+
+.footer_main_two_content ul li {
+  padding-bottom: 30px;
+}
+
+.footer_main_two_content ul li:last-child {
+  padding-bottom: 0;
+}
+
+.footer_main_two_content a {
+  font-family: var(--nunito);
+  font-weight: var(--semibold);
+  font-size: var(--text20);
+  color: var(--primarycolor);
+  line-height: 120%;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+
+.footer_main_two_content a:hover {
+  color: var(--colorpurple);
+}
+/* ======= Footer Css Area End Here ======= */
+
+/* ======= Footer End Css Area Start Here ======= */
+#footerend {
+  background: rgba(241, 251, 251, 0.5);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footerend_txt h3 {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 180%;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+
+.footerend_txt h3:hover {
+  color: var(--colorpurple);
+}
+
+.footerend_txt a {
+  font-family: var(--nunito);
+  font-weight: var(--regular);
+  font-size: var(--text18);
+  color: var(--primarycolor);
+  line-height: 180%;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+
+.footerend_txt a:hover {
+  color: var(--colorpurple);
+}
+
+/* ======= Footer End Css Area End Here ======= */
+
+/* ======= Common Css Area Start Here ======= */
+/* ======= Common Css Area End Here ======= */
